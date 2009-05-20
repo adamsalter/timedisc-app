@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {openHomeURL = id; }; 
+            CLASS = TimeDiscAboutPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {applicationIcon = NSButton; homeURLButton = NSButton; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

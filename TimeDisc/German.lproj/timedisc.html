@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+	<title>furrysoft.de - TimeDisc</title>
+	<style type="text/css">
+
+	body {
+		font-family: lucida grande, verdana, arial, helvetica, sans-serif;
+		font-size: 1em;
+		color: #333333;
+		margin-top: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		}
+
+	p {
+		padding: 0;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		}
+
+	h1 {
+		font-size: 1em;
+        font-weight: bold;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding: 0;
+		}
+	
+	img {
+		display: inline;
+		margin-top: 1em;
+		}
+	
+	pre {
+		display: block;
+		background-color: #EEEEFF;
+		color: black;
+		padding: 0.5em;
+		margin: 0.5em;
+		}
+
+	.sub {
+		display: block;
+		position: relative;
+		font-size: 0.9em;
+        font-style: oblique;
+		margin-bottom: 2em;
+		}
+	
+	.sup {
+		display: block;
+		position: relative;
+		font-size: 0.9em;
+        font-style: oblique;
+		margin-top: 1em;
+		margin-left: 0.5em;
+		}
+	
+	.note-header {
+		display:block;
+        font-weight: bold;
+        text-decoration: underline;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+		margin-left: 2em;
+		}
+
+	.note {
+		display:block;
+		margin-left: 2em;
+		margin-bottom: 1em;
+		}
+
+    a b {
+        color: black;
+        font-size: 1.1em;
+        font-weight: bold;
+		}
+    
+    a:hover b {
+        color: #E0A000;
+		}
+
+    a {
+        color: #A06000;
+        text-decoration: none;
+		}
+    
+    a:hover {
+        text-decoration: underline;
+        color: #E0A000;
+		}
+	
+    a.noul:hover {
+        text-decoration: none;
+        color: #E0A000;
+		}
+	
+</style>
+</head>
+<body>
+
+<div align="center">
+<p><b>TimeDisc</b></p>
+<div class="sub" style="margin-bottom:0;">v 0.3.0</div>
+<img src="../graphics/timediscicon.png" style="margin-top:0;" border=0>
+
+<p>Copyright 2002-2003 Andreas Mayer</p>
+<p><a href="mailto:andreas@furrysoft.de">mailto:andreas@furrysoft.de</a></p>
+<p><a href="http://www.furrysoft.de/?page=timedisc">http://www.furrysoft.de/?page=timedisc</a></p>
+</div>
+<br />
+
+<a name="inhalt"></a>
+<h1>Inhalt</h1>
+<a href="#einleitung">Einleitung</a><br />
+<a href="#screenshots">Darstellungsbeispiele</a><br />
+<a href="#installation">Installation</a><br />
+<a href="#einstellungen">Allgemeine Einstellungen</a><br />
+<a href="#fenster">Einstellungen f&uuml;r das Uhrenfenster</a><br />
+<a href="#layout">Layout-Einstellungen</a><br />
+<a href="#farben">Farben</a><br />
+<a href="#farbthemen">Farbthemen</a><br />
+<a href="#license">Nutzungsbedingungen</a><br />
+
+<a name="einleitung"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Einleitung</h1>
+ 
+<p>TimeDisc ist eine fast normale Analoguhr. :)</p>
+
+<p>Allerdings hat TimeDisc ein paar Eigenschaften, die in dieser Kombination sonst nicht zu finden sind:</p>
+<ul>
+<li>genauso einfach zu lesen, wie eine gew&ouml;hnliche Analoguhr</li>
+<li>die Farben zeigen Vor- oder Nachmittag an</li>
+<li>Gr&ouml;&szlig;e, Farben und Transparenz einstellbar</li>
+<li>das Uhrenfenster kann &uuml;ber dem Dock schweben oder direkt auf dem Schreibtisch liegen</li>
+<li>Mausklicks werden auf Wunsch an die darunterliegende Applikation durchgelassen</li>
+<li>Zeitanzeige im Fenster, im Dock, oder beides</li>
+</ul>
+
+<p>Neu seit Version 0.2:</p>
+<ul>
+<li>Dock Icon abschaltbar</li>
+<li>Men&uuml;leistenuhr in bunt, als Icon oder Text und auf Wunsch mit Datum und Wochentag</li>
+<li>Sekundenanzeige in zwei Varianten</li>
+<li>Takt und damit Rechenzeit zwischen einer und sechzig Sekunden w&auml;hlbar</li>
+<li>wahlweise Herabsetzen der Prozesspriorit&auml;t</li>
+<li>Schatten des Uhrenfensters abschaltbar</li>
+<li>Anordnung und Gr&ouml;&szlig;e der Stunden-, Minuten- und Sekundenringe frei w&auml;hlbar</li>
+<li>automatische Farbwahl aus einer Bildvorlage</li>
+</ul>
+
+<p>Neu seit Version 0.3:</p>
+<ul>
+<li>Zifferblatt mit 24 Stunden-Einteilung</li>
+<li>Verwalten von Farbthemen (Im-/Export, Drag&amp;Drop)</li>
+<li>Automatisches Ausblenden, wenn der TimeDisc Bildschirmschoner aktiviert wird</li>
+</ul>
+
+<a name="screenshots"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp; Darstellungsbeispiele </h1>
+
+<p>Die folgenden Bildschirmfotos sollten einen Eindruck davon vermitteln, was man mit
+TimeDisc anstellen kann:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/colors1.jpg"> <img src="../graphics/screenshots/colors2.jpg">
+<p class="sub">w&auml;hlen Sie die Farben passend zum Schreibtisch-Hintergrund</p>
+
+<img src="../graphics/screenshots/transparency1.jpg"> <img src="../graphics/screenshots/transparency2.jpg">
+<p class="sub">nutzen Sie Transparenz damit die Uhr weniger aufdringlich wirkt</p>
+
+<img src="../graphics/screenshots/simple.jpg">
+<p class="sub">manchmal ist weniger mehr</p>
+
+<img src="../graphics/screenshots/menubar.jpg">
+<p class="sub">klein genug, um in die Men&uuml;leiste zu passen</p>
+
+<img src="../graphics/screenshots/desktopsmall.jpg">
+<p class="sub">gro&szlig; genug, um den kompletten Schreibtisch zu nutzen</p>
+</div>
+
+
+<a name="installation"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Installation</h1>
+ 
+<p>Kopieren Sie TimeDisc auf Ihren Mac und starten Sie das Programm. Die Zeit wird bei TimeDisc mittels farbiger Kreissegmente dargestellt.</p>
+H&auml;tte die Uhr Zeiger, w&uuml;rde sie so aussehen:
+<div align="center">
+<img src="../graphics/screenshots/hands.png">
+</div>
+
+<p>Angenommen Hellgrau steht f&uuml;r Vormittag und Dunkelgrau f&uuml;r Nachmittag, dann ist es in diesem Beispiel 22 Uhr und 13 Minuten.</p>
+
+<p>Wenn Sie TimeDisc erstmal einige Zeit benutzt haben, werden Sie wahrscheinlich feststellen, da&szlig; man sogar schneller sieht, wie sp&auml;t es ist, als auf einer gew&ouml;hnlichen Uhr. Au&szlig;erdem mu&szlig; man nicht aus dem Fenster sehen, um festzustellen, ob es Vor- oder Nachmittag ist. ;-)</p>
+
+
+<a name="einstellungen"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Allgemeine Einstellungen</h1>
+ 
+<p>W&auml;hlen Sie "Einstellungen..."
+aus dem "TimeDisc" Men&uuml;. Es &ouml;ffnet sich folgendes Fenster:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-g1.jpg">
+<p class="sub">TimeDisc Einstellungen &ndash; Allgemein</p>
+</div>
+
+<p>Was die Auswahltasten unter "Zeige Uhr" machen, d&uuml;rfte offensichtlich sein.</p>
+<p>W&auml;hlen Sie "24h Anzeige" um 24 statt 12 Stundenteilungen auf dem Zifferblatt anzuzeigen. Die Stundenmarkierungen werden dann auf dem Stundenring eingeblendet:</p>
+<div align="center">
+<img src="../graphics/screenshots/24hours.jpg">
+<p class="sub">18 Uhr und 14 Minuten bei eingeschalteter 24 Stunden-Anzeige</p>
+</div>
+<p>Alle Komponenten der Men&uuml;leistenuhr lassen sich unabh&auml;ngig voneinander einschalten.
+Eine mu&szlig; mindestens aktiviert sein. Hier sehen Sie beispielhaft zwei Darstellungsvarianten:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/menu-g1.jpg"> <img src="../graphics/screenshots/menu-g2.jpg"><br />
+<p class="sub">Zifferblatt, Wochentag, Datum und Uhrzeit &mdash; Zifferblatt als
+Icon und Wochentag</p>
+</div>
+
+<p>Der Takt gibt an, wie oft die Uhrenanzeige aktualisiert werden soll. Im obigen Bild ist die Einstellung auf eine Sekunde festgesetzt, da die Sekundenanzeige (unter Layout) aktiviert ist.</p>
+
+<p>W&auml;hlen Sie "Priorit&auml;t herabsetzen", um anderen Programmen Vorrang bei der Vergabe der Rechenzeit einzur&auml;umen. Bei normaler Auslastung Ihres Mac werden Sie keinen Unterschied feststellen; lediglich wenn besonders viel Rechenzeit gebraucht wird, kann die Uhr zugunsten anderer Programme kurz aussetzen.</p>
+
+<p class="note-header">Hinweis:</p>
+<p class="note">
+1. Wenn Sie die Darstellung im Dock ausschalten, wird das Dock Icon beim n&auml;chsten Programmstart ausgeblendet. Sie sehen dann folgenden Hinweis:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/prefs-g1-1.jpg">
+<p class="sub">Hinweis nach Abschalten der Dock-Darstellung</p>
+</div>
+
+<p class="note">
+2. Wenn das Dock Icon abgeschaltet ist, zeigt Mac OS X auch das Hauptmen&uuml; nicht mehr an. Damit Sie TimeDisc trotzdem weiterhin steuern k&ouml;nnen, wird in diesem Fall immer die Men&uuml;leistenuhr angezeigt, deren Men&uuml; alle n&ouml;tigen Funktionen bietet:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/menu-g3.jpg">
+<p class="sub">Men&uuml; der TimeDisc Men&uuml;leistenuhr</p>
+</div>
+
+<a name="fenster"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Einstellungen f&uuml;r das Uhrenfenster</h1>
+ 
+<p>Werfen wir einen Blick auf die Optionen unter "Fenster":</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-g2.jpg">
+<p class="sub">TimeDisc Einstellungen &ndash; Fenster</p>
+</div>
+
+<p>Mit dem Schieberegler "Gr&ouml;&szlig;e des Zifferblatts" w&auml;hlen Sie den Durchmesser des Uhrenfensters in Bildpunkten.</p>
+
+<p>"Transparenz" bestimmt, wie stark der Hintergrund durchscheint.</p>
+
+<p>Darunter k&ouml;nnen Sie einstellen, auf welcher Ebene das Uhrenfenster dargestellt werden soll.</p>
+<ul>
+<li>Normal: Die Uhr verh&auml;lt sich wie ein ganz normales Fenster.</li>
+<li>&Uuml;ber anderen schwebend: Die Uhr liegt immer &uuml;ber anderen Fenstern.</li>
+<li>&Uuml;ber Dock schwebend: Schwebt &uuml;ber der Men&uuml;zeile und &uuml;ber dem Dock.</li>
+<li>Auf Schreibtisch anzeigen: Die Uhr wird direkt auf dem Schreibtisch-Hintergrund angezeigt, so da&szlig; die Icons dar&uuml;ber liegen. Diese Option deaktiviert automatisch "Reagiert auf Maus".</li>
+</ul>
+
+<p>Wenn Sie "Schatten anzeigen" abschalten, wird das Uhrenfenster ohne Schatten dargestellt.</p>
+
+<p>"Reagiert auf Maus" ist das &uuml;bliche Verhalten. Ein Mausklick auf die Uhr aktiviert das Fenster und bringt TimeDisc nach vorne. Das Fenster l&auml;&szlig;t sich au&szlig;erdem mit der Maus verschieben.</p>
+
+<p>Deaktivieren Sie diese Option, gehen Mausklicks durch das Uhrenfenster und landen bei dem Objekt, das darunter liegt; sei es ein anderes Fenster oder der Schreibtisch.</p>
+
+<p class="note-header">Hinweis:</p>
+<p class="note">
+"Auf Schreibtisch anzeigen" und "Reagiert auf Maus" sind erst ab Mac OS X 10.2 verf&uuml;gbar.</p>
+
+
+<a name="layout"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Layout-Einstellungen</h1>
+ 
+<p>Auf dieser Seite k&ouml;nnen Sie das Aussehen der Uhrendarstellung beeinflussen:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-g3.jpg">
+<p class="sub">TimeDisc Einstellungen &ndash; Layout</p>
+</div>
+
+<p>TimeDisc stellt die Uhrzeit als konzentrische Ringe, bzw. Scheiben dar. Mit "Anordnung" bestimmen Sie die Reihenfolge dieser Ringe. Die zuerst genannte Einheit wird innen (als Scheibe) gezeichnet, die letztgenannte k&ouml;nnen Sie am Au&szlig;enring ablesen.</p>
+
+<p>Neben der Darstellung als Ring, k&ouml;nnen Sie f&uuml;r die Sekunden auch einen Punkt anzeigen lassen, der sich dann auf der Bahn des mittleren Rings bewegt. Oder sie stellen die Sekundenanzeige ganz ab. Hier sehen Sie die beiden Varianten im Vergleich:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/seconds1.jpg"> <img src="../graphics/screenshots/seconds2.jpg"><br />
+<p class="sub">Vergleich zwischen Sekundenring und Sekundenpunkt</p>
+</div>
+
+<p>Der &auml;u&szlig;erste Ring hat immer den Durchmesser des Fensters. Die Gr&ouml;&szlig;e der inneren Scheibe und des Mittelrings werden im Verh&auml;ltnis zu diesem Gesamtdurchmesser angegeben. Ist der Durchmesser des Mittelrings kleiner als der der inneren Scheibe, dann ist der Mittelring nicht sichtbar. Sie sehen in dem Fall folgende Warnung:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/prefs-g3-1.jpg">
+<p class="sub">Warnung bei nicht sichtbarem Mittelring</p>
+</div>
+
+<a name="farben"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Farben</h1>
+ 
+<p>F&uuml;r s&auml;mtliche Elemente wie Stunden- oder Minutensegmente, Sekundenpunkt oder Markierungsstriche k&ouml;nnen Sie die Farbe frei w&auml;hlen:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-g4.jpg">
+<p class="sub">TimeDisc Einstellungen &ndash; Farbe</p>
+</div>
+
+<p>Wie Sie mit Farbthemen arbeiten, beschreibt der <a href="#farbthemen">n&auml;chste Abschnitt</a>.</p>
+
+<p>"Stunden (Vormittag)" bezieht sich auf den Teil des Stundenrings, der die Vormittagsstunden zeigt, "Stunden (Nachmittag)" dementsprechend auf den anderen Teil.<br />
+&Auml;hnliches gilt f&uuml;r Minuten und Sekunden. W&auml;hrend gerader Stunden-/Minutenzahlen werden die Minuten/Sekunden in der ersten Farbe dargestellt, w&auml;hrend ungerader Stunden/Minuten in der zweiten Farbe.</p>
+
+<p>"Zufallsfarben" w&auml;hlt f&uuml;r alle Elemente eine zuf&auml;llige Farbe aus der eingestellten Farbvorlage aus. Dabei versucht TimeDisc, die Farben so zuzuweisen, da&szlig; die Uhr gut ablesbar bleibt.</p>
+
+<p>Die voreingestellte Farbvorlage ist eine komplette Farbpalette. Interessantere Effekte k&ouml;nnen Sie erzielen, indem Sie mittels "Vorlage w&auml;hlen" ein Bild als Farbvorlage nutzen. Die "Zufallsfarben"-Funktion beschr&auml;nkt sich bei der Farbauswahl dann auf Farben aus diesem Bild. Es ist sogar m&ouml;glich, statt eines einzelnen Bilds einen Ordner zu w&auml;hlen. TimeDisc sucht dann jedesmal ein zuf&auml;lliges Bild aus diesem Ordner als Vorlage aus.</p>
+
+<a name="farbthemen"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Farbthemen</h1>
+<p>Mit dem "Farbthema" Popupmen&uuml; w&auml;hlen Sie eines der vorhandenen Farbthemen aus, legen ein neues an, oder bearbeiten die Farbthemenliste.</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-g4-1.jpg">
+<p class="sub">TimeDisc Einstellungen &ndash; Farbthema wählen</p>
+</div>
+<p class="note-header">Hinweis:</p>
+<p class="note">
+Es ist nicht m&ouml;glich, ein vorhandenes Farbthema zu ver&auml;ndern; sobald Sie eine der relevanten Einstellungen &auml;ndern, wird ein neues Farbthema "Unbenannt" angelegt. Dieses k&ouml;nnen Sie dann unter einem neuen Namen sichern.</p>
+<p>"Themen bearbeiten..." f&uuml;hrt zu folgendem Dialog, in dem Sie Ihre Farbthemen umbenennen, l&ouml;schen, sowie als Dateien im- und exportieren k&ouml;nnen.</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-g4-2.jpg">
+<p class="sub">TimeDisc Einstellungen &ndash; Farbthemen bearbeiten</p>
+</div>
+<p>Au&szlig;erdem lassen sich Farbthemen per Drag&amp;Drop aus der Farbthemenliste heraus, oder in sie hinein bewegen.<br />
+Farbthemen k&ouml;nnen als Datei oder als Textausschnitt vorliegen. Textausschnitte lassen sich nur dann importieren, wenn sie die richtige Syntax besitzen.</p>
+<p>Probieren Sie es damit:</p>
+<p class="sup">(W&auml;hlen Sie "Themen bearbeiten...", markieren Sie den hervorgehobenen Text und ziehen Sie ihn mit der Maus auf die Farbthemenliste.)</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;Colors&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;HoursAM&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz9/AACDPr4AAIM9kAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;HoursPM&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz6iAACDPy0AAIM/WAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;MinutesEven&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz9/AASDPr4ACIM9kAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;MinutesOdd&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz6h//iDPyz//IM/WAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondColor&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmAAEAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondsDot&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz54AACDPKAAAIM9EAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondsEven&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz9/AASDP37Hh4M+d86sAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondsOdd&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz5iqjiDPmyULoM/bvj0AYY=
+		&lt;/data&gt;
+		&lt;key&gt;TickMarksHour&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmAAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;TickMarksMinute&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmAAAAAYY=
+		&lt;/data&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;Layout&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;Display24Hours&lt;/key&gt;
+		&lt;string&gt;YES&lt;/string&gt;
+		&lt;key&gt;DisplaySeconds&lt;/key&gt;
+		&lt;string&gt;2&lt;/string&gt;
+		&lt;key&gt;InnerDiscSize&lt;/key&gt;
+		&lt;string&gt;0.4666667&lt;/string&gt;
+		&lt;key&gt;MiddleDiscSize&lt;/key&gt;
+		&lt;string&gt;0.8291667&lt;/string&gt;
+		&lt;key&gt;UnitRanking&lt;/key&gt;
+		&lt;string&gt;5&lt;/string&gt;
+	&lt;/dict&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</pre>
+<p>Damit legen Sie ein neues Farbthema mit dem Namen "Unbenannt 2" an. Schlie&szlig;en Sie den Dialog und w&auml;hlen Sie das neue Farbthema aus. (Es handelt sich hier um ein eher ungew&ouml;hnliches Design.)</p>
+
+
+<a name="license"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Nutzungsbedingungen</h1>
+<p>TimeDisc ist Freeware. Sie d&uuml;rfen das Programm beliebig weitergeben, kopieren, zerlegen oder was Ihnen sonst noch so einf&auml;llt.<p>
+
+<p>Kritik und Anregungen k&ouml;nnen Sie per <a href="mailto:andreas@furrysoft.de">Email</a> oder direkt auf <a href="http://www.furrysoft.de">www.furrysoft.de</a> loswerden.</p>
+<p>Ich freue mich &uuml;ber jede Reaktion!</p>
+<br />
+<p class="note">
+Wenn Ihnen TimeDisc gef&auml;llt, bin ich auch f&uuml;r eine kleine Spende dankbar. <a href="http://www.furrysoft.de/index.php?page=donate" target="_blank">Hier</a> finden Sie meine Kontonummer und <a href="https://www.paypal.com/xclick/business=andreas%40furrysoft.de&item_name=TimeDisc&no_note=1&tax=0&currency_code=EUR" target="_blank">hier</a> k&ouml;nnen Sie einen Betrag Ihrer Wahl auf mein <a href="http://www.paypal.com">PayPal</a>-Konto &uuml;bertragen.</p>
+<br />
+<p>Vielen Dank f&uuml;r Ihre Unterst&uuml;tzung!</p>
+<br />
+<p><a href="mailto:andreas@furrysoft.de">Andreas Mayer</a></p>
+<br />
+</body>
+</html>

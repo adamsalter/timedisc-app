@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+	<title>furrysoft.de - TimeDisc</title>
+	<style type="text/css">
+
+	body {
+		font-family: lucida grande, verdana, arial, helvetica, sans-serif;
+		font-size: 1em;
+		color: #333333;
+		margin-top: 3em;
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		}
+
+	p {
+		padding: 0;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		}
+
+	h1 {
+		font-size: 1em;
+        font-weight: bold;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding: 0;
+		}
+	
+	img {
+		display: inline;
+		margin-top: 1em;
+		}
+	
+	pre {
+		display: block;
+		background-color: #EEEEFF;
+		color: black;
+		padding: 0.5em;
+		margin: 0.5em;
+		}
+
+	.sub {
+		display: block;
+		position: relative;
+		font-size: 0.9em;
+        font-style: oblique;
+		margin-bottom: 2em;
+		}
+	
+	.sup {
+		display: block;
+		position: relative;
+		font-size: 0.9em;
+        font-style: oblique;
+		margin-top: 1em;
+		margin-left: 0.5em;
+		}
+	
+	.note-header {
+		display:block;
+        font-weight: bold;
+        text-decoration: underline;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+		margin-left: 2em;
+		}
+
+	.note {
+		display:block;
+		margin-left: 2em;
+		margin-bottom: 1em;
+		}
+
+    a b {
+        color: black;
+        font-size: 1.1em;
+        font-weight: bold;
+		}
+    
+    a:hover b {
+        color: #E0A000;
+		}
+
+    a {
+        color: #683000;
+        text-decoration: none;
+		}
+    
+    a:hover {
+        text-decoration: underline;
+        color: #E0A000;
+		}
+	
+    a.noul:hover {
+        text-decoration: none;
+        color: #E0A000;
+		}
+	
+</style>
+</head>
+<body>
+
+<div align="center">
+<p><b>TimeDisc</b></p>
+<div class="sub" style="margin-bottom:0;">v 0.3.0</div>
+<img src="../graphics/timediscicon.png" style="margin-top:0;" border=0>
+
+<p>Copyright 2002-2003 Andreas Mayer</p>
+<p><a href="mailto:andreas@furrysoft.de">mailto:andreas@furrysoft.de</a></p>
+<p><a href="http://www.furrysoft.de/?page=timedisc&amp;lang=en">http://www.furrysoft.de/?page=timedisc&amp;lang=en</a></p>
+</div>
+<br />
+
+<a name="inhalt"></a>
+<h1>Inhalt</h1>
+<a href="#einleitung">Introduction</a><br />
+<a href="#screenshots">Screenshots</a><br />
+<a href="#installation">Installation</a><br />
+<a href="#einstellungen">Global Preferences</a><br />
+<a href="#fenster">Window Preferences</a><br />
+<a href="#layout">Layout Preferences</a><br />
+<a href="#farben">Colors</a><br />
+<a href="#farbthemen">Themes</a><br />
+<a href="#license">License</a><br />
+
+<a name="einleitung"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Introduction</h1>
+ 
+<p>TimeDisc is an almost standard analog clock.</p>
+
+<p>Albeit it has some unique features, you probably won't find anywhere else in that combination:</p>
+<ul>
+<li>as easy to read as any standard clock</li>
+<li>colors show AM/PM</li>
+<li>adjust size, colors and transparency</li>
+<li>put the clock window above the dock or directly on the desktop below your icons</li>
+<li>make mouse clicks go right through the clock window</li>
+<li>show time in a window, in the dock, or both</li>
+</ul>
+
+<p>New in version 0.2:</p>
+<ul>
+<li>hide dock icon</li>
+<li>menu bar clock with full color or icon style clock, weekday, time and date</li>
+<li>select any clock pulse between one and sixty seconds</li>
+<li>reduce process priority</li>
+<li>switch off window shadow</li>
+<li>select any ranking of time units (e.g. hours innermost, then seconds and minutes last)</li>
+<li>use random color selection</li>
+</ul>
+
+<p>New in version 0.3:</p>
+<ul>
+<li>24 hours option</li>
+<li>managing themes (im-/export, drag&amp;drop)</li>
+<li>auto-hide when TimeDisc Saver is activated</li>
+</ul>
+
+<a name="screenshots"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Screenshots</h1>
+
+<p>These screenshots will give you an idea of what you can do with TimeDisc:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/colors1.jpg"> <img src="../graphics/screenshots/colors2.jpg">
+<p class="sub">choose whatever colors fit with your desktop scheme</p>
+
+<img src="../graphics/screenshots/transparency1.jpg"> <img src="../graphics/screenshots/transparency2.jpg">
+<p class="sub">use transparency to reduce distraction</p>
+
+<img src="../graphics/screenshots/simple.jpg">
+<p class="sub">sometimes less is more</p>
+
+<img src="../graphics/screenshots/menubar.jpg">
+<p class="sub">small enough to fit in the menu bar</p>
+
+<img src="../graphics/screenshots/desktopsmall.jpg">
+<p class="sub">large enough to cover your desktop</p>
+</div>
+
+
+<a name="installation"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Installation</h1>
+ 
+<p>Copy TimeDisc to whatever location you want and start it. TimeDisc uses colored segments to display time.</p>
+This is what the clock would look like, if it had hands:
+<div align="center">
+<img src="../graphics/screenshots/hands.png">
+</div>
+
+<p>So, supposed light grey stands for AM and dark grey for PM, it's 10:13 PM in this example.</p>
+
+<p>After using TimeDisk for a while you'll probably find, that it's actually easier to see what time of day it is, than with a normal clock. Plus you can find out if it's AM or PM without looking out of the window. ;-)</p>
+
+
+<a name="einstellungen"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Global Preferences</h1>
+ 
+<p>Choose 'Preferences...' from
+the 'TimeDisc' menu. You will be presented with this window:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-e1.jpg">
+<p class="sub">TimeDisc Preferences &ndash; Global</p>
+</div>
+
+<p>I think it's obvious what the Clock Face Size slider and the 'Show Clock' buttons do.</p>
+<p>Choose the 'Use 24 Hours' option to display a clock face divided not into 12 but 24 segments. Additional hour tick marks will be drawn on the hours ring:</p>
+<div align="center">
+<img src="../graphics/screenshots/24hours.jpg">
+<p class="sub">6:14 PM on a 24 hour clock</p>
+</div>
+<p>Any part of the menu bar clock can be activated separately.
+Alas, at least one component must be selected.</p>
+
+<div align="center">
+<img src="../graphics/screenshots/menu-e1.jpg"> <img src="../graphics/screenshots/menu-e2.jpg"><br />
+<p class="sub">clock face, weekday, date and time &mdash; icon style clock and weekday</p>
+</div>
+
+<p>'Clock Beat' controls how often the clock is updated. (In the example above, the clock beat is locked to one second since TimeDisc is configured to display seconds; see 'Preferences &ndash; Layout'.)</p>
+
+<p>Select 'Run with Low Priority' to give other applications precedence when you are  running out of processor cycles. Under normal conditions you probably won't notice any  differences. Only in situations when there is not enough processing power available, the clock may stall for a moment, letting other apps do their work first.</p>
+
+<p class="note-header">Note:</p>
+<p class="note">
+1. If you choose to not display the clock in the dock, the dock icon will be hidden the next time you restart TimeDisc:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/prefs-e1-1.jpg">
+<p class="sub">note after deselecting 'Show Clock In Dock'</p>
+</div>
+
+<p class="note">
+2. When disabling the dock icon, Mac OS X hides the application's menu, too. To circumvent this limitation, TimeDisc enables the menu bar clock whenever the dock icon is not displayed. This way you have access to all of TimeDisc's functions through the menu bar clock's pull down menu:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/menu-e3.jpg">
+<p class="sub">pull down menu from the menu bar clock</p>
+</div>
+
+<a name="fenster"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Window Preferences</h1>
+ 
+<p>Let's have a look at the options for TimeDisc's main window:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-e2.jpg">
+<p class="sub">TimeDisc Preferences &ndash; Window</p>
+</div>
+
+<p>The 'Clock Face Size' slider adjusts the diameter of the clock window in screen pixels.</p>
+
+<p>You may select any grade of 'Transparency' between opaque and totally invisible (though TimeDisc will reset the value on restart if you left it on fully transparent).</p>
+
+<p>You can choose one of the following window levels:</p>
+<ul>
+<li>Normal: The clock is displayed among the windows of all other applications.</li>
+<li>Float above other Windows: As it says ...</li>
+<li>Float above Menu Bar: And above the dock, too.</li>
+<li>Show on Desktop: The clock window is drawn directly on the desktop, below your icons. This option automatically deselects 'Mouse Activates Window'.</li>
+</ul>
+
+<p>Deselect 'Display Shadow' to hide the shadow around the clock face.</p>
+
+<p>'Mouse Activates Window' is the standard behaviour. A click on the clock window tops it and brings TimeDisc to front. Dragging moves the window.</p>
+
+<p>If you deselect this option, any mouse click will go right through the clock window to whatever lies below it; be it another window or the desktop.</p>
+
+<p class="note-header">Note:</p>
+<p class="note">
+'Show on Desktop' and 'Mouse Activates Window' are available on Mac OS X 10.2 and later only.</p>
+
+
+<a name="layout"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Layout Preferences</h1>
+ 
+<p>On this page you choose the overall look of your desktop clock:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-e3.jpg">
+<p class="sub">TimeDisc Preferences &ndash; Layout</p>
+</div>
+
+<p>TimeDisc displays time in concentric colored rings. By selecting a 'Ranking' you decide what unit of time is displayed at what position. The one to go innermost is mentioned first, the last one ends up on the outer ring.</p>
+
+<p>Seconds may not only be displayed as a ring, but also as a dot, moving along the perimeter of the middle ring. Or you may switch off the seconds display altogether. Here you can see both display methods in comparison:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/seconds1.jpg"> <img src="../graphics/screenshots/seconds2.jpg"><br />
+<p class="sub">comparison between seconds display as ring or as dot</p>
+</div>
+
+<p>The diameter of the outermost ring equals the diameter of the whole window. You set the size of the 'Inner Disc' and the 'Middle Ring' relative to that diameter. When a middle ring is to be displayed but it's diameter is smaller than that of the inner disc, the middle ring will not be visible. This is indicated by this caution note:</p>
+
+<div align="center">
+<img src="../graphics/screenshots/prefs-e3-1.jpg">
+<p class="sub">note when Middle Ring is not visible</p>
+</div>
+
+<a name="farben"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Colors</h1>
+ 
+<p>You may change the color of any part of the clock; be it hour or minute segments, seconds dot or tick marks:</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-e4.jpg">
+<p class="sub">TimeDisc Preferences &ndash; Color</p>
+</div>
+
+<p>Saving and loading of themes (sets of color and layout preferences) is described in the <a href="#farbthemen">next section</a>.</p>
+
+<p>'Hours (AM)' refers to the part of the inner disc that display the hours before noon, 'Hours (PM)' stands for the other part.<br />
+Similar goes for the minutes. Minutes in odd hours draw in the first color, those in even hours in the second. Same for seconds, only that this time the color is based on the current minute (even/odd).</p>
+
+<p>'Randomize' chooses random colors for all elements. TimeDisc tries to select colors that are visually distinctive, so that you will actually be able to read the clock.</p>
+
+<p>All colors are chosen from a color source, i.e. a picture. The default color source comprises the whole color space. It gets more interesting when you select a real picture as a source. In that case you will get colors from that picture only. You may even select not just a single picture, but a folder of pictures as a color source. In this case TimeDisc will choose a random picture from that folder each time you hit 'Randomize'.</p>
+
+<a name="farbthemen"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;Themes</h1>
+<p>Use the 'Theme' popup menu to select an existing theme, create a new one or manage your theme library.</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-e4-1.jpg">
+<p class="sub">TimeDisc Preferences &ndash; Selecting Themes</p>
+</div>
+<p class="note-header">Note:</p>
+<p class="note">
+You can not alter an existing theme; whenever you change a theme relevant setting, the selected theme will revert to 'Unnamed'. You may then save your changes as a new theme.</p>
+<p>'Edit Themes...' let's you alter theme names, delete themes as well as im- and export theme files.</p>
+<div align="center">
+<img src="../graphics/screenshots/prefs-e4-2.jpg">
+<p class="sub">TimeDisc Preferences &ndash; Editing Themes</p>
+</div>
+<p>It is also possible to drag themes from and to the theme list.<br />
+Themes may be received as theme files or as text clippings. You can even import a theme in text form, provided it has a valid syntax.</p>
+<p>Try this one:</p>
+<p class="sup">(Choose 'Edit Themes...', select the highlighted text below and drag it onto the theme list.)</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;Colors&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;HoursAM&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz9/AACDPr4AAIM9kAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;HoursPM&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz6iAACDPy0AAIM/WAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;MinutesEven&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz9/AASDPr4ACIM9kAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;MinutesOdd&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz6h//iDPyz//IM/WAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondColor&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmAAEAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondsDot&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz54AACDPKAAAIM9EAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondsEven&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz9/AASDP37Hh4M+d86sAYY=
+		&lt;/data&gt;
+		&lt;key&gt;SecondsOdd&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmgz5iqjiDPmyULoM/bvj0AYY=
+		&lt;/data&gt;
+		&lt;key&gt;TickMarksHour&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmAAAAAYY=
+		&lt;/data&gt;
+		&lt;key&gt;TickMarksMinute&lt;/key&gt;
+		&lt;data&gt;
+		BAt0eXBlZHN0cmVhbYED6IQBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWE
+		AWMBhARmZmZmAAAAAYY=
+		&lt;/data&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;Layout&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;Display24Hours&lt;/key&gt;
+		&lt;string&gt;YES&lt;/string&gt;
+		&lt;key&gt;DisplaySeconds&lt;/key&gt;
+		&lt;string&gt;2&lt;/string&gt;
+		&lt;key&gt;InnerDiscSize&lt;/key&gt;
+		&lt;string&gt;0.4666667&lt;/string&gt;
+		&lt;key&gt;MiddleDiscSize&lt;/key&gt;
+		&lt;string&gt;0.8291667&lt;/string&gt;
+		&lt;key&gt;UnitRanking&lt;/key&gt;
+		&lt;string&gt;5&lt;/string&gt;
+	&lt;/dict&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</pre>
+<p>You end up with a new theme labelled 'Unnamed 2' in your theme list. Close the sheet and select your new theme to see what it looks like. (This one is a rather unusual design.)</p>
+
+
+<a name="license"></a>
+<h1><a href="#inhalt" class="noul">&#x25b2;</a>&nbsp;License</h1>
+
+<p>TimeDisc is freeware. You may copy this application, hand it on, disassemble it or do with it what ever you like.<p>
+
+<p>For comments or suggestions, please send me an <a href="mailto:andreas@furrysoft.de">email</a> or have a look at the <a href="http://www.furrysoft.de/?lang=en">www.furrysoft.de</a> website.</p>
+<p>I'm looking forward to your reactions!</p>
+<br />
+<p class="note">
+If you like TimeDisc, you may consider helping further development by making a <a href="https://www.paypal.com/xclick/business=andreas%40furrysoft.de&item_name=TimeDisc&no_note=1&tax=0&currency_code=EUR" target="_blank">donation</a> to my <a href="http://www.paypal.com">PayPal</a> account.</p>
+<br />
+<p>Thank you very much for your support!</p>
+<br />
+<p><a href="mailto:andreas@furrysoft.de">Andreas Mayer</a></p>
+<br />
+</body>
+</html>

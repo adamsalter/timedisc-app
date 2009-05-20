@@ -1,0 +1,41 @@
+{
+    IBClasses = (
+        {
+            CLASS = AMScrollViewDraggingDestination; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSScrollView; 
+        }, 
+        {CLASS = AMTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = TimeDiscThemeListTableView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = AMTableView; 
+        }, 
+        {
+            ACTIONS = {
+                commit = id; 
+                copyTheme = id; 
+                deleteTheme = id; 
+                exportTheme = id; 
+                importTheme = id; 
+                renameTheme = id; 
+            }; 
+            CLASS = TimeDiscThemePanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                copyButton = NSButton; 
+                deleteButton = NSButton; 
+                exportButton = NSButton; 
+                importButton = NSButton; 
+                okButton = NSButton; 
+                renameButton = NSButton; 
+                themeNamesScrollView = AMScrollViewDraggingDestination; 
+                themeNamesTableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

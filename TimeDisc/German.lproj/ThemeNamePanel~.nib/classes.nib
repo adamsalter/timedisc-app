@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {commit = id; dismiss = id; }; 
+            CLASS = TimeDiscThemeNamePanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {themeNameTextField = NSTextField; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

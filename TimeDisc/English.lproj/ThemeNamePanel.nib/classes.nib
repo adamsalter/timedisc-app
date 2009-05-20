@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = AMFileNameFormatter; LANGUAGE = ObjC; SUPERCLASS = NSFormatter; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {commit = id; dismiss = id; }; 
+            CLASS = TimeDiscThemeNamePanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {okButton = NSButton; themeNameTextField = NSTextField; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

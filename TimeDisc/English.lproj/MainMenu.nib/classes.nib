@@ -1,0 +1,112 @@
+{
+    IBClasses = (
+        {CLASS = CustomWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                chooseRandomColors = id; 
+                chooseSourcePicture = id; 
+                clickThroughChanged = id; 
+                clockspeedChanged = id; 
+                display24HoursChanged = id; 
+                displaySecondsChanged = id; 
+                hoursAMColorChanged = id; 
+                hoursPMColorChanged = id; 
+                innerDiscSizeChanged = id; 
+                menuBarShowClockChanged = id; 
+                menuBarShowDateChanged = id; 
+                menuBarShowTimeChanged = id; 
+                menuBarShowWeekdayChanged = id; 
+                menuBarUse24hChanged = id; 
+                menuBarUseIconChanged = id; 
+                middleDiscSizeChanged = id; 
+                minutesEvenColorChanged = id; 
+                minutesOddColorChanged = id; 
+                newRandomSourceImage = id; 
+                openDateAndTimePreferencePane = id; 
+                openPreferences = id; 
+                openReadMe = id; 
+                reniceChanged = id; 
+                secondsDotColorChanged = id; 
+                secondsEvenColorChanged = id; 
+                secondsOddColorChanged = id; 
+                showAboutPanel = id; 
+                showClockInDockChanged = id; 
+                showClockInMenuBarChanged = id; 
+                showClockInWindowChanged = id; 
+                themeChanged = id; 
+                tickMarksColorChanged = id; 
+                transparencyChanged = id; 
+                unitRankingChanged = id; 
+                windowLevelChanged = id; 
+                windowShowShadowChanged = id; 
+                windowSizeChanged = id; 
+            }; 
+            CLASS = TimeDiscController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                chooseRandomColors = NSButton; 
+                chooseRandomColorsButton = NSButton; 
+                chooseSourcePictureButton = NSButton; 
+                clockPulseSlider = NSSlider; 
+                clockPulseTextField = NSTextField; 
+                dateDisplayMenuItem = NSMenuItem; 
+                display24HoursCheckBox = NSButton; 
+                displaySecondsDotRadioButton = NSButton; 
+                displaySecondsNoneRadioButton = NSButton; 
+                displaySecondsRingRadioButton = NSButton; 
+                hoursAMColorWell = NSColorWell; 
+                hoursAMLabelTextField = NSTextField; 
+                hoursPMColorWell = NSColorWell; 
+                hoursPMLabelTextField = NSTextField; 
+                imageView = NSImageView; 
+                innerDiscSizeSlider = NSSlider; 
+                innerDiscSizeTextField = NSTextField; 
+                mainWindow = NSWindow; 
+                menuShow24hCheckBox = NSButton; 
+                menuShowClockCheckBox = NSButton; 
+                menuShowDateCheckBox = NSButton; 
+                menuShowIconCheckBox = NSButton; 
+                menuShowTimeCheckBox = NSButton; 
+                menuShowWeekdayCheckBox = NSButton; 
+                middleDiscSizeSlider = NSSlider; 
+                middleDiscSizeTextField = NSTextField; 
+                middleRingCautionImage = NSImageView; 
+                middleRingCautionText = NSTextField; 
+                minutesEvenColorWell = NSColorWell; 
+                minutesOddColorWell = NSColorWell; 
+                noClickThroughCheckBox = NSButton; 
+                prefsWindow = NSWindow; 
+                reniceCheckBox = NSButton; 
+                secondsDotColorWell = NSColorWell; 
+                secondsEvenColorWell = NSColorWell; 
+                secondsOddColorWell = NSColorWell; 
+                showInDockCautionImage = NSImageView; 
+                showInDockCautionTextField = NSTextField; 
+                showInDockCheckBox = NSButton; 
+                showInMenuBarCheckBox = NSButton; 
+                showInWindowCheckBox = NSButton; 
+                sourcePictureTextField = NSTextField; 
+                statusItemMenu = NSMenu; 
+                testWindow = NSWindow; 
+                themePopUpButton = NSPopUpButton; 
+                tickMarksColorWell = NSColorWell; 
+                timeDiscView = TimeDiscView; 
+                unitRankingPopUpButton = NSPopUpButton; 
+                windowLevelDesktopRadioButton = NSButton; 
+                windowLevelFloatAboveMenuBarCheckBox = NSButton; 
+                windowLevelFloatRadioButton = NSButton; 
+                windowLevelNormalRadioButton = NSButton; 
+                windowShadowCheckBox = NSButton; 
+                windowSizeSlider = NSSlider; 
+                windowSizeTextField = NSTextField; 
+                windowTransparencySlider = NSSlider; 
+                windowTransparencyTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TimeDiscView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = myImageView; LANGUAGE = ObjC; SUPERCLASS = NSImageView; }
+    ); 
+    IBVersion = 1; 
+}
